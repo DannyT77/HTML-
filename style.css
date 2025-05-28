@@ -1,5 +1,12 @@
 body{
-    background-color: green;
+    border-style: outset;
+    border-color: gold;
+    border-radius: 5px;
+    background: linear-gradient(to top skyblue, light green);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border:2px solid;
+    margin: 0px;
 }
 h1{
     color: blue;
@@ -14,4 +21,47 @@ h1{
 }
 #p3{
     color: orange;
+    font-family: "consolas" ,sans-serif;
+    font-style: italic;
+    font-weight: bold;
 }
+#box1{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: greenyellow;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box2{
+    border: 5px solid;
+    width: 250px;
+    height: 250px;
+    font-size: 22px;
+    background: red;
+}
+
+/*
+margin: 50 px for all around
+margin: auto will center and match whenever you stretch your screen
+float: will make your image go to a  side and everything after follows 
+use clear to stop float
+id use #name
+for class use .name
+
+position: there is static(we can change where it is), absolute will just let wtv element under the wtv
+theres also realtive, fixed stay in postion in wtv you want even when you scroll down
+sticky will stick to the top even when you scroll down uo etc
+
+pseudo class allows you to change things like link color, 
+like buttom:active{
+color: blue}
+
+shadow: text-shadow: 0px 0px 0px color
+box-shadow: 0px 0px 0px color
+
+transform: move wtv you want 
+*/
+
