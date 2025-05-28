@@ -1,0 +1,17 @@
+body{
+    background-color: green;
+}
+h1{
+    color: blue;
+}
+
+--
+#p1{
+    color: purple;
+}
+#p2{
+    color: red
+}
+#p3{
+    color: orange;
+}

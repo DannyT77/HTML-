@@ -2,6 +2,7 @@
 <html> 
     <head>
         <title> My first website </title> <!-- Name of website-->
+        <link rel = "stylesheet" href = "style.css">
     </head>
     <body>
         <h1> This is an h1 heading </h1><!-- heading 1-->
@@ -46,8 +47,179 @@
             <source src = "backup.webm" type = "video/webm">
         </video> <!-- importing mp3 into the website-->
 
-        <video>
-        </video>
-    </body>
+        <link rel = "icon" type = "image/jpg" href = "location of file name.jpg">
+        <!-- this changes the favicon or the small image of your website-->
+
+         <p>This is normal text</p>
+         <p>This is <b> bold</b> text</p>
+         <p>This is <i>italicnormal </i> text</p>
+         <p>This is <u> underline text</u> text</p>
+         <p>This is <big>big</big> text</p>
+         <p>This is <small>small</small> text</p>
+         <p>This is <sub> subscript </sub>  text</p>
+         <p>This is <sup> superscript</sup> text</p>
+         <p>This is <tt>monospaced</tt> text</p>
+         <p>This is <mark style = "background-color: lightblue"> marled</mark> text</p>
+        <!-- this is the dif styles for text-->
+
+        <h1><span style = "background-color: red">This is a spam title</span></h1>
+        <h1><div style = "background-color: blue">This is a div title</div></h1>
+
+        <p><span style = "background-color: purple">This is a span sentence</span></p>
+        <p><div style = "background-color: green"> This is a div sentenece</div></p>
+
+        <!-- span only highlights the word while div highlights the whole section-->
+
+        <!-- unordered list-->
+         <h4>unordered grocery list</h4>
+         <ul>
+            <li>milk</li>
+            <li>bread</li>
+            <li>coffee supplies</li>
+            <ul>
+                <li>coffee beans</li>
+                <li>creamer</li>
+                <li>sugar</li>
+            </ul>
+         </ul>
+
+        <!-- ordered list -->
+         <h4>to do ordered list</h4>
+         <ol>
+            <li>eat breakfast</li>
+            <li>go to school</li>
+            <li>do hw</li>
+            <li>take out trash</li>
+         </ol>
+
+        <!-- description list-->
+         <h4>description list for mythical creature</h4>
+         <dl style = "background-color: aqua; border: 2px solid;">
+            <dt>dragon</dt>
+            <dd>flying lizard</dd>
+            <dt>phoneix</dt>
+            <dd>fire bird</dd>
+            <dt>zombie</dt>
+            <dd>undead human</dd>
+         </dl>
+
+        <!-- Create a table-->
+         <h3>TP tea store hours</h3>
+         <table border = "1", style = "background-color: green;">
+            <tr align = "center", style = "background-color: red;">
+                <th width ="100">Sunday</th>
+                <th width ="100">Monday</th>
+                <th width ="100">Tuesday</th>
+                <th width ="100">Wednesday</th>
+                <th width ="100">Thursday</th>
+                <th width ="100">Friday</th>
+                <th width ="100">Saturday</th>
+            </tr>
+            <tr align = "center", style = "background-color: aquamarine;">
+                <td>11:30-10</td>
+                <td>11:30-10</td>
+                <td>11:30-10</td>
+                <td>11:30-10</td>
+                <td>11:30-10</td>
+                <td>11:30-10</td>
+                <td>11:30-10</td>
+            </tr>
+         </table>
+         <br>
+         <br>
+
+         <!-- creating a button -->
+          <a href = "https://www.youtube.com/watch?v=JLqXeMabsEQ"
+          target = "_blank">
+          <button style = "font-size: 25px; background-color: antiquewhite; font-size: 20 px; border-radius: 15px;" >click me</button>
+        </a>
+        <br>
+        <br>
+
+        <!-- create a form; POST(prive info) and GET(not private)-->
+         <form action = "index.php" method = "POST" enctype="multipart/form-data">
+            <!--index.php(where it send to)-->
+            <label for ="username">username: </label>
+            <input type = "text" id = "username" placeholder = "Batman" minlength = "6" maxlength="10" required><br>
+            <!-- created a label and input for username-->
+            <label for ="password">password: </label>
+            <input type = "password" id = "password" minlength = "6" maxlength="10" required><br>
+            <!-- created a password label-->
+            <!--email-->
+            <label type ="email">email: </label>
+            <input type = "email" id="email" placeholder="DannyT@gmail.com"><br>
+            <!-- phone number label-->
+            <label for = "phone"> phone number: </label>
+            <input type = "tel" id = "phone" placeholder = "123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <!--birthday-->
+            <label for = "bday">birthday: </label>
+            <input type = "date" id ="bday"><br>
+            <!-- quantity label-->
+            <label for = "quantity">quantity: </label>
+            <input type = "number" id = "quantity" min = "0" max ="100" value="1"><br>
+            <!-- titles radio -->
+            <label for ="title">title: </label>
+            
+            <label for = "Mr.">Mr. </label>
+            <input type = "radio" id="Mr. " value = "Mr. " name = "title">
+            <label for = "Ms. ">Ms. </label>
+            <input type = "radio" id="Ms. " value = "Ms. " name = "title">
+            <label for = "PHd.">PHD. </label>
+            <input type = "radio" id="PHD. " value = "PHD. " name = "title"><br>
+
+            <!-- drop down menu-->
+            <label for ="payment">payment</label>
+            <select id="payment">
+                <option value = "visa">visa</option>
+                <option value = "mastercard">mastercard</option>
+                <option value = "giftcard">giftard</option>
+            </select><br>
+
+            <!-- checkbox -->
+            <label for = "subscribe">Subcribe: </label>
+            <input type = "checkbox" id = "subscribe"><br>
+
+            <!-- text area -->
+            <label for = "comment">comment:</label>
+            <textarea id ="comment" rows ="3" cols = "20"></textarea><br>
+
+            <!-- file -->
+            <label for = "file">file:</label>
+            <input type = "file" id="file"><br>
+
+            <!--created a submit label-->
+            <input type = "reset"><br>
+            <input type = "submit">
+         </form><br>
+
+         <!-- header/footer -->
+         <header style = "background-color: antiquewhite;">
+            <h1>Welcome to Danny's portfolio</h1>
+            <a href = "">Home</a>
+            <a href = "">About me</a>
+            <a href = "">Experience</a>
+            <a href = "">Projects</a>
+            <a href = "">Contact Info</a>
+            <hr>
+         </header>
+
+         <main>
+            <h4>Check out my pics</h4>
+            <image src = "" alt = "profile pic"></image>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta dignissimos illo minima ex odio nemo quam saepe exercitationem facere voluptatem beatae excepturi maxime, cum, voluptas praesentium nesciunt temporibus suscipit.</p>
+         </main>
+
+         <footer style = "background-color: aliceblue;">
+            <hr>
+            author: Danny <br>
+            &copy; copyright reserved<br>
+            <small><a href = "mailto: DannyTat@gmail.com">DannyTat@gmail.com</a></small>
+         </footer>
+
+         <p id = "p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus consequatur praesentium, aut veritatis consequuntur, provident cupiditate eaque eveniet quaerat vitae nam ex aliquid natus. Nulla eius distinctio cum voluptas.</p>
+         <p id = "p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus consequatur praesentium, aut veritatis consequuntur, provident cupiditate eaque eveniet quaerat vitae nam ex aliquid natus. Nulla eius distinctio cum voluptas.</p>
+         <p id = "p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi doloribus consequatur praesentium, aut veritatis consequuntur, provident cupiditate eaque eveniet quaerat vitae nam ex aliquid natus. Nulla eius distinctio cum voluptas.</p>
+
+        </body>
 
 </html> 
